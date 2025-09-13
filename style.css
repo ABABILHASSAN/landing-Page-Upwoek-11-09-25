@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700;800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,400;0,600;0,800;1,200&family=Quicksand:wght@400;500;700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    font-family: "Oswald", sans-serif;
+}
+
+html{
+    font-size: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+section{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.custom-line {
+  border: none;           /* remove default border */
+  height: 1.6px;            /* thickness */
+  background: #333;       /* line color */
+  width: 100%;             /* line width */
+  margin: 35px auto;      /* spacing & center alignment */
+}
+
+/* Header Section Starts From */
+
+
+header{
+    background-color: #FB7A09;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+header .header{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 2px 40px;
+}
+
+header .header .header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5rem;
+    
+}
+
+header .header .header-container .logo{
+    width: 340px;
+}
+
+header .header .header-container h2{
+    font-size: 	1.625rem;
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    line-height: 1;
+}
+
+header .header .header-container .box .contact-info{
+    display: flex;
+    align-items: end;
+    gap: .8rem;
+}
+
+
+header .header .header-container .box .contact-info .contact-number p{
+    font-size: 1.25rem;
+    color: #fff;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+}
+
+header .header .header-container .box .contact-info .contact-number a{
+    font-size: 2.75rem;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #004272;
+}
+
+
+/* Header Section Ends From */
+
+
+/* Home section starts From Here */
+
+.home {
+    background-image: url('images/imgi_13_bg-image-2.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;      /* full width */
+    height: 100vh;    /* full viewport height */
+}
+
+
+.home::after {
+    content: '';
+    height: calc(9em + 30vw);
+    width: 41%;
+    background-image: url('images/allclear-icon-2.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0px;
+    position: absolute;
+    bottom: 0;
+    right: 8%;
+    z-index: 1;
+    background-size: contain;
+    -webkit-transform: translate(-2em, 2%);
+    -ms-transform: translate(-2em,2%);
+    transform: translate(-2em, 2%);
+    transition: transform .4s ease 0s;
+}
+
+.home .home-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: start;
+    padding: 0 2%;
+}
+
+.home .home-container p{
+    font-size: 35px;
+    font-weight: 500;
+    color: #fff;
+    margin-top: .7rem;
+    font-family: "Oswald", sans-serif;
+}
+
+.home .home-container .c-color{
+    color: #004272;
+    font-family: "Oswald", sans-serif;
+
+}
+
+.home .home-container .btn{
+    background: linear-gradient(#004272, #004272);
+    color: #fff;
+    padding: 15px 28px;
+    border-radius: .6rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-top: 1rem;
+}
+
+.home .home-container .btn:hover{
+    background: linear-gradient(#0c578d, #004272);
+    
+}
+
+
+/* Home section Ends From Here */
+
+
+/* Testimonial Section Starts From Here */
+
+
+.testimonial-section{
+    margin-top: .8rem;
+    background: #1D4668;
+}
+
+
+
+.testimonial-section .testimonial-section-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    align-items: center;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem;
+}
+
+.testimonial-section .testimonial-section-container .testimonial-left{
+    border-right: 1px solid #FB7A09;
+    width: 50%;
+}
+
+.testimonial-section .testimonial-section-container .testimonial-left .title{
+    font-size: 1.9rem;
+    color: #FB7A09;
+    font-weight: normal;
+    display: inline-block;   /* keeps underline just under the text */
+    border-bottom: 2px solid #FB7A09; /* 3px underline, black */
+    padding-bottom: 4px;
+    margin-bottom: 30px;
+}
+
+.testimonial-section .testimonial-section-container .testimonial-left p{
+    color: #fff;
+    font-size: 1.375rem;
+    line-height: 36px;
+    font-style: italic;
+    margin: 0 60px 30px 35px;
+    text-align: center;
+    padding: 0;
+    font-weight: normal;
+}
+
+.testimonial-section .testimonial-section-container .testimonial-left .testimonial-user{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 90px;
+}
+
+.testimonial-section .testimonial-section-container .testimonial-left .testimonial-user .text{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.testimonial-section .testimonial-section-container .testimonial-left .testimonial-user .text span{
+    font-size: 1.125rem;
+    font-weight: normal;
+}
+
+
+
+.testimonial-section .testimonial-section-container .testimonial-right .text-1{
+    font-size: 2.25rem;
+    color: #fff;
+    margin-left: 61px;
+}
+
+.testimonial-section .testimonial-section-container .testimonial-right .text-2{
+    font-size: 3.438rem;
+    color: #FB7A09;
+    margin-left: 61px;
+    margin-bottom: 1rem;
+}
+
+.guaranteed__list {
+  list-style: none; /* remove default bullets */
+  padding: 0;
+  margin: 0;
+  
+}
+
+.guaranteed__list li {
+  position: relative;
+  padding-left: 80px; /* space for the icon */
+  margin-bottom: 12px;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.guaranteed__list li::before {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0px; /* adjust vertically */
+  width: 60px;  /* size of your PNG */
+  height: 60px;
+  background: url("images/checkmark-sm.png") no-repeat center center;
+  background-size: contain; /* make sure image fits */
+}
+
+
+/* Testimonial Section Ends From Here */
+
+
+
+/* References Section Starts From Here */
+
+
+.section-above{
+    background: url("images/imgi_15_references-bg.jpg") repeat-x center top; 
+    background-size: contain;   
+    position: relative;
+    z-index: 1;
+    height: 100px;
+}
+
+
+/* Move references section up */
+#references {
+    margin-top: -210px; /* adjust value as needed */
+    position: relative; /* ensures it moves relative to its normal position */
+    z-index: 1; /* keeps it above background if needed */
+}
+
+#references .references-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0 5%;
+}
+
+#references .references-container .box-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+/* References Section Ends From Here */
+
+
+/* Content Area Section Starts From Here  */
+
+
+
+.content-area .content-area-container h2{
+    font-size: 2.5rem;
+    margin: 2rem 0;
+    font-family: arial;
+    color: #000;
+    font-weight: bold;
+}
+
+.content-area .content-area-container h3{
+    font-size: 21px;
+    font-family: arial;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 2rem;
+}
+
+.content-area .content-area-container .dot{
+    font-size: 15px;
+    font-weight: 400;
+    font-family: arial;
+    color: #000;
+}
+
+.content-area .content-area-container .dot span{
+    font-weight: bolder;
+}
+
+.content-area .content-area-container p{
+    font-size: 16px;
+    font-family: arial;
+    color: #000;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+/* Content Area Section Ends From Here */
+
+
+/* Footer Section Starts Form Here */
+
+
+.footer{
+    margin-top: 4rem;
+}
+
+.footer .top{
+    background-color: #FB7A09;
+    text-align: center;
+    padding: .5rem 0;
+}
+
+.footer .top h2{
+    color: #fff;
+    font-size: 22px;
+}
+
+.footer .middle{
+    background: #004272;
+    padding: 3rem 5%;
+}
+
+.footer .middle .middle-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.footer .middle .middle-container .text{
+    font-size: 20px;
+    font-family: arial;
+}
+
+.footer .middle .middle-container .card .card-container .box{
+    margin-bottom: 1rem;
+}
+
+.footer .middle .middle-container .card .card-container .box img{
+    padding-left: 1rem;
+}
+
+.footer .bottom{
+    background: #FB7A09;
+    text-align: center;
+}
+
+.footer .bottom a{
+    color: #fff;
+    padding: 0 2rem;
+}
+
+.footer .bottom a:hover{
+    background: #004272;
+    cursor: pointer;
+}
+
+
+/* Footer Section Ends Form Here */
+
+
+
+
+
+/************************* Media Queries Starts From Here  ***********************/
+
+
+@media (max-width:1100px){
+
+    html{
+        font-size: 90%;
+    }
+
+    header .header{
+    padding: 2px 2%;
+    }
+
+    header .header .header-container .box .contact-info .icon img{
+        width: 30px;
+    }
+
+    .home::after {
+
+        height: calc(9em + 40vw);
+    }
+
+    .home .home-container{
+        padding: 0 7%;
+    }
+
+
+    .guaranteed__list li::before {
+        width: 50px;  /* size of your PNG */
+        height: 50px;
+    }
+
+}
+
+
+
+@media (max-width:991px){
+    html{
+        font-size: 70%;
+    }
+
+    header .header .header-container .logo{
+        width: 260px;
+    }
+
+    header .header .header-container .box .contact-info .icon img{
+        width: 25px;
+    }
+
+    .home::after {
+        
+        height: calc(9em + 50vw);
+    }
+
+    .guaranteed__list li::before {
+        width: 40px;  /* size of your PNG */
+        height: 40px;
+    }
+
+    .guaranteed__list li {
+        padding-left: 60px; /* space for the icon */
+    }
+
+    #references .references-container{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+
+}
+
+
+
+
+
+@media (max-width:768px){
+
+    html{
+        font-size: 60%;
+    }
+
+    header .header .header-container .logo{
+        width: 200px;
+    }
+
+    header .header .header-container h2{
+        display: none;
+    }
+
+    header .header .header-container .box .contact-info .icon img{
+        width: 20px;
+    }
+    
+    .home::after {
+        
+        display: none;
+    }
+
+    .testimonial-section .testimonial-section-container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .testimonial-section .testimonial-section-container .testimonial-left{
+        border: none;
+        width: 80%;
+    }
+
+    .testimonial-section .testimonial-section-container .testimonial-left .title{
+        
+    }
+
+    .testimonial-section .testimonial-section-container .testimonial-left p{
+        margin: 0;
+    }
+
+    .testimonial-section .testimonial-section-container .testimonial-left .testimonial-user{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 90px;
+    }
+
+    .footer .middle .middle-container{
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2.5rem;
+    }
+
+
+}
+
+
+
+@media (max-width:500px){
+
+    header .header .header-container .logo{
+        width: 150px;
+    }
+
+    header .header .header-container .box .arrow{
+        display: none;
+    }
+
+    .home .home-container{
+        justify-content: center;
+        padding: 0 2%;
+        text-align: center;
+    }
+
+    #references .references-container .box-2{
+        gap: .5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #references {
+        margin-top: -170px; /* adjust value as needed */
+    }
+
+    #references .references-container .box-1 img{
+        width: 40rem;
+    }
+}
+
+
+
+
+@media (max-width:380px){
+    header .header .header-container{
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+
+    #references .references-container .box-1 img{
+        width: 30rem;
+    }
+
+}
+
+/************************* Media Queries Ends From Here  ***********************/
